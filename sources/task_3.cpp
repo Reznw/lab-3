@@ -7,7 +7,7 @@ void swap_el(std::vector<int>& input) {
     size_t temp = 0;
     for (size_t i = 0; i < 3; ++i) {
         temp = input[i];
-        input[i] = input[input.size() - 3 + 0];
+        input[i] = input[input.size() - 3 + i];
         input[input.size() - 3 + 0] = temp;
     }
 }
