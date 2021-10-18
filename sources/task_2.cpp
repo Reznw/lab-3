@@ -27,9 +27,9 @@ int sum_six(const std::vector<int>& input) {
     return sumall;
 }
 
-int sum_k(const std::vector<int>& input, size_t k1, size_t k2) {
-    size_t sumall = 0;
-    for (size_t i = k1; i <= k2; ++i) {
+int sum_k(const std::vector<int>& input, int k1, int k2) {
+    int sumall = 0;
+    for (int i = k1; i <= k2; ++i) {
         sumall += input[i];
     }
     return sumall;
@@ -44,11 +44,11 @@ int mean(const std::vector<int>& input) {
     return average;
 }
 
-int mean_k(const std::vector<int>& input, size_t s1, size_t s2) {
-    size_t sumall = 0;
-    for (size_t i = s1; i <= s2; ++i) {
+int mean_k(const std::vector<int>& input, int s1, int s2) {
+    int sumall = 0;
+    for (int i = s1; i <= s2; ++i) {
         sumall += input[i];
     }
-    size_t average = sumall / (s2 -s1 + 1);
+    int average = sumall / (s2 -s1 + 1);
     return average;
 }
