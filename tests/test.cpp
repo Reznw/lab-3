@@ -1,4 +1,4 @@
-// Copyright 2020 Your Name <your_email>
+// Copyright 2021 Reznw
 
 #include "tasks.hpp"
 
@@ -31,10 +31,10 @@ TEST(Task_1_2, Test) {
 
   std::vector<int> v1 = {-1, -2, 3, 4};
   reduce_a(v1, -1);
-  EXPECT_EQ(-2, v1[0]);
-  EXPECT_EQ(-3, v1[1]);
-  EXPECT_EQ(2, v1[2]);
-  EXPECT_EQ(3, v1[3]);
+  EXPECT_EQ(0, v1[0]);
+  EXPECT_EQ(-1, v1[1]);
+  EXPECT_EQ(4, v1[2]);
+  EXPECT_EQ(5, v1[3]);
 }
 
 TEST(Task_1_3, Test) {
@@ -201,8 +201,8 @@ TEST(Task_10, Test) {
 
 // Task 11.
 TEST(Task_11, Test) {
-  EXPECT_EQ(std::string("Can you a a a as a aner a a a a?"), replace_can("a"));
-  EXPECT_EQ(std::string("Can you the a the as a thener the the a the?"),
+  EXPECT_EQ(std::string("Can you a a a as a canner a a a a?"), replace_can("a"));
+  EXPECT_EQ(std::string("Can you the a the as a canner the the a the?"),
             replace_can("the"));
-  EXPECT_EQ(std::string("Can you  a  as a ner   a ?"), replace_can(""));
+  EXPECT_EQ(std::string("Can you  a  as a canner   a ?"), replace_can(""));
 }
