@@ -17,7 +17,7 @@ void reduce_a(std::vector<int>& input, int a) {
 }
 
 void div_on_first(std::vector<int>& input) {
-     size_t divis = input[0];
+     int divis = input[0];
      for (size_t i = 0; i < input.size(); ++i) {
         input[i] /= divis;
     }
