@@ -8,6 +8,6 @@ void swap_el(std::vector<int>& input) {
     for (size_t i = 0; i < 3; ++i) {
         temp = input[i];
         input[i] = input[input.size() - 3 + i];
-        input[input.size() - 3 + 0] = temp;
+        input[input.size() - 3 + i] = temp;
     }
 }
