@@ -12,11 +12,13 @@ void remove_negative(std::vector<int>& input) {
 }
 
 void remove_last_even(std::vector<int>& input) {
-    size_t even_number;
+    size_t even_number = 0;
     for (size_t i = 0; i < input.size(); ++i) {
         if (input[i] % 2 == 0) {
             even_number = i;
         }
     }
-    input.erase(input.begin() + even_number);
+    if (even_number != 0) {
+        input.erase(input.begin() + even_number);
+    }
 }
